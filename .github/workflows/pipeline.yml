@@ -60,7 +60,7 @@ jobs:
 
     - name: Build, Tag and Push Docker Image
       id: mr-smithers-excellent/docker-build-push@v4
-      env:
+      use:
         # image: jamiu/java-app
         # image: 724827917641.dkr.ecr.eu-west-1.amazonaws.com/java-app:latest
         # registry: docker.io
