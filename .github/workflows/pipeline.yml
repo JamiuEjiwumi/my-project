@@ -45,7 +45,10 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push the image to Amazon ECR
-      id: build-image
+      # id: build-image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: 724827917641.dkr.ecr.eu-west-1.amazonaws.com/java-app
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
