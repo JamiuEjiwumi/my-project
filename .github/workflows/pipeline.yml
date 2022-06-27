@@ -2,7 +2,7 @@ name: Java deployment with Gradle
 
 on:
   push:
-    branches: [ test-deploymentin ]
+    branches: [ test-deployment ]
   pull_request:
     branches: [ test-deployment ]
 
