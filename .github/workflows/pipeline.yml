@@ -1,10 +1,10 @@
-name: Java CI with Gradle
+name: Java deployment with Gradle
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-deploymentin ]
   pull_request:
-    branches: [ main ]
+    branches: [ test-deployment ]
 
 jobs:
   build-java:
